@@ -8,10 +8,9 @@
 
 对于小白用户：请下载抓取航海榜.exe，可执行文件版本
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9c578050-6da0-43b4-a9e0-ae8557a23b22/Untitled.png)
+![image](https://github.com/xqingting/bilibiliup_analysis/assets/30023378/5a61619b-5e61-47a8-aed7-3b911e823e9c)
 
 使用中会请你先输入房间号和主播uid，分别在主播直播间和个人空间的url链接里可以找到
 
 抓取效果如图：
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/67aff73a-7571-4d6e-a121-5cc2963b3b89/Untitled.png)
+![image](https://github.com/xqingting/bilibiliup_analysis/assets/30023378/341edd57-edff-4c56-b9c1-bfc13de735db)
