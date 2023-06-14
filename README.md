@@ -1,6 +1,8 @@
 # bilibiliup_analysis
 
 这是一套针对b站up主（尤其是主播）的数据分析系统。主要功能为：**抓取航海榜名单、监控抓取新增粉丝；根据uid文件批量抓取粉丝信息**。
+![image](https://github.com/xqingting/bilibiliup_analysis/assets/30023378/de41201f-2b87-41ea-b21f-89c889649ac1)
+
 
 ## 抓取航海榜名单
 
