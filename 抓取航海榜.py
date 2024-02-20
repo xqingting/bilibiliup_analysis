@@ -10,9 +10,19 @@ def validate_input(prompt):
         else:
             print("输入错误，请输入一个数字。")
 
+# 请求头 需要在env配置cookie
+header1 = {
+    'content-type': 'text/plain; charset=utf-8',
+    'cookie': "",
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.71 Safari/537.36 Core/1.94.186.400 QQBrowser/11.3.5195.400'
+}
+
 # 获取房间号和主播UID
 roomid = validate_input("请输入房间号：")
 ruid = validate_input("请输入主播UID：")
+# cookie = input("请输入cookie：")
+
+# header1['cookie'] = cookie
 
 group = []
 pagelength = 0
@@ -29,7 +39,7 @@ else:
 
 for page in range(2, pagelength + 1):
     url = f"https://api.live.bilibili.com/xlive/app-room/v2/guardTab/topList?roomid={roomid}&ruid={ruid}&page_size=29&page={page}"
-    response = requests.get(url)
+    response = requests.get(url, headers=header1)
     if response.status_code == 200:
         data = response.json()["data"]
         group.extend(data["list"])
