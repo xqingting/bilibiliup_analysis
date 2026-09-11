@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "bilibiliup-analysis",
+  "version": "2.0.0",
+  "identifier": "com.xqingting.biliup",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:5173",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "B站UP主数据分析工坊",
+        "width": 1320,
+        "height": 860,
+        "minWidth": 980,
+        "minHeight": 660,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "category": "DeveloperTool",
+    "shortDescription": "B站UP主数据分析工坊",
+    "longDescription": "抓取航海榜名单、监控新增粉丝、批量抓取UID信息、统计词频。内置Wbi签名、风控重试与登录Cookie支持。",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+# Rust
+app/src-tauri/target/
+
+# Node
+app/node_modules/
+app/dist/
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 本地抓取产物（运行时生成）
+*.json.bak
+
+# Tauri 自动生成
+app/src-tauri/gen/schemas/
